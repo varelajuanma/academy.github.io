@@ -1,0 +1,72 @@
+header {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Cinzel Decorative', cursive;
+  background-color: Gray;
+  color: white;
+  border-style: double;
+  padding: 30px;
+  text-shadow: 2px 2px 5px black;
+  border-radius: 5px;
+}
+
+body {
+  background-color: MediumSeaGreen;
+  margin: 20px;
+}
+
+img {
+  background-size: contain;
+  border: 1px solid black double;
+  border-style: double;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.card-image {
+  background-color: MediumSeaGreen;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.row {
+  margin: 5px;
+  background-color: white;
+  border-style: double;
+  border-radius: 5px;
+}
+
+.col {
+  text-align: center;
+  margin: 5px;
+  border-radius: 5px;
+  font-family: 'Bree Serif', serif;
+}
+
+.datos_personales, .formacion, .experienciaLaboral, .idioma, .cursos {
+  text-align: center;
+  border-style: double;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: Gray;
+  font-family: 'Anton', sans-serif;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px white;
+}
+
+.accordion {
+  text-align: center;
+  border-style: double;
+  border-radius: 5px;
+  margin: 5px;
+  font-family: 'Bree Serif', serif;
+}
+
+#nombre, #dni, #nacimiento, #nacionalidad, #provincia, #localidad, #direccion, #codigopostal, #estadocivil, #email, #telefono {
+  text-transform: uppercase;
+  border-radius: 5px;
+  background-color: MediumSeaGreen;
+  text-shadow: 2px 2px 5px white;
+  margin: 2px;
+
+}
