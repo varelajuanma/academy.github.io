@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es-AR" dir="ltr">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+  <title>Curriculum Vitae</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif" rel="stylesheet">
+</head>
+
+<header>
+  <h1 id="titulo" onmouseover="mouseOver()" onmouseout="mouseOut()"> Mi Curriculum Vitae</h1>
+</header>
+
+<body>
+  <div class="container">
+    <section id="datos_personales">
+      <div class="row">
+        <div class="col">
+          <div class="datos_personales">
+            <h2>Datos personales</h2>
+          </div>
+          <div class="row">
+            <div class="col">
+              <i class="fi fi-sr-user"></i> <b>Nombre y Apellido</b>
+              <br>
+              <button id="nombre" type="button" onclick="myNombre()">Ver Nombre y Apellido</button>
+              <br>
+              <i class="fi fi-sr-fingerprint"></i> <b>DNI</b>
+              <br>
+              <button id="dni" type="button" onclick="myDNI()">Ver DNI</button>
+              <br>
+              <i class="fi fi-sr-credit-card"></i> <b>Fecha de Nacimiento</b>
+              <br>
+              <button id="nacimiento" type="button" onclick="myNacimiento()">Ver Fecha de nacimiento</button>
+              <br>
+              <i class="fi fi-sr-marker"></i> <b>Nacionalidad</b>
+              <br>
+              <button id="nacionalidad" type="button" onclick="myNacionalidad()">Ver Nacionalidad</button>
+              <br>
+              <i class="fi fi-sr-marker"></i> <b>Provincia de Residencia</b>
+              <br>
+              <button id="provincia" type="button" onclick="myProvincia()">Ver Provincia</button>
+              <br>
+              <i class="fi fi-sr-marker"></i> <b>Localidad/Ciudad</b>
+              <br>
+              <button id="localidad" type="button" onclick="myLocalidad()">Ver Localidad</button>
+              <br>
+              <i class="fi fi-sr-home"></i> <b>Dirección</b>
+              <br>
+              <button id="direccion" type="button" onclick="myDireccion()">Ver Dirección</button>
+              <br>
+              <i class="fi fi-sr-marker"></i> <b>Código Postal</b>
+              <br>
+              <button id="codigopostal" type="button" onclick="myCodigoPostal()">Ver Código Postal</button>
+              <br>
+              <i class="fi fi-sr-following"></i> <b>Estado Civil</b>
+              <br>
+              <button id="estadocivil" type="button" onclick="myEstadoCivil()">Ver Estado Civil</button>
+              <br>
+              <i class="fi fi-sr-envelope"></i> <b>Email</b>
+              <br>
+              <button id="email" type="button" onclick="myEmail()">Ver Email</button>
+              <br>
+              <i class="fi fi-sr-phone-call"></i> <b>Teléfono</b>
+              <br>
+              <button id="telefono" type="button" onclick="myTelefono()">Ver Teléfono</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-image">
+            <img id="imagen-perfil" src="https://randomuser.me/api/portraits/men/3.jpg">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacion">
+      <div class="formacion">
+        <h2>Formación</h2>
+      </div>
+      <div class="accordion" id="accordionFormacion">
+        <!-- BOTON DESPLEGABLE UNO -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingUno">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseUno" aria-expanded="false" aria-controls="collapseUno">
+              <strong>Bachiller Modalidad: Economía y Gestión de las Organizaciones - Polimodal - COLEGIO SAN JOSÉ</strong>
+            </button>
+          </h2>
+          <div id="collapseUno" class="accordion-collapse collapse" aria-labelledby="headingUno" data-bs-parent="#accordionFormacion">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col s12 l4">
+                  <b>Área de estudio:</b> BACHILLER
+                </div>
+                <div class="col s12 l4">
+                  <b>Nivel de estudio:</b> ESCOLAR
+                </div>
+                <div class="col s12 l4">
+                  <b>Estado:</b> COMPLETO
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha de inicio:</b> 01/03/2006
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha de fin:</b> 01/12/2008
+                </div>
+                <div class="col s12 l4">
+                  <b>Promedio:</b> 8
+                </div>
+                <div class="col s12 l4">
+                  <b>Cantidad de materias:</b> 34
+                </div>
+                <div class="col s12 l4">
+                  <b>Cantidad de materias aprobadas:</b> 34
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BOTON DESPLEGABLE DOS -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingDos">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDos" aria-expanded="false" aria-controls="collapseDos">
+              <strong>Licenciatura en Sistemas - UNIVERSIDAD NACIONAL DE LA PLATA</strong>
+            </button>
+          </h2>
+          <div id="collapseDos" class="accordion-collapse collapse" aria-labelledby="headingDos" data-bs-parent="#accordionFormacion">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col s12 l4">
+                  <b>Área de estudio:</b> ANÁLISIS DE SISTEMAS
+                </div>
+                <div class="col s12 l4">
+                  <b>Nivel de estudio:</b> Universitario
+                </div>
+                <div class="col s12 l4">
+                  <b>Estado:</b> EN CURSO
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha de inicio:</b> 01/01/2015
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha fin:</b> Cursando actualmente
+                </div>
+                <div class="col s12 l4">
+                  <b>Promedio:</b> 6
+                </div>
+                <div class="col s12 l4">
+                  <b>Cantidad de materias:</b> 37
+                </div>
+                <div class="col s12 l4">
+                  <b>Cantidad de materias aprobadas:</b> 21
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BOTON DESPLEGABLE TRES -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTres">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
+              <strong>Analista en Tecnologías de la Información y la Comunicación - UNIVERSIDAD NACIONAL DE LA PLATA</strong>
+            </button>
+          </h2>
+          <div id="collapseTres" class="accordion-collapse collapse" aria-labelledby="headingTres" data-bs-parent="#accordionFormacion">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col s12 l4">
+                  <b>Área de estudio:</b> ANÁLISIS DE SISTEMAS
+                </div>
+                <div class="col s12 l4">
+                  <b>Nivel de estudio:</b> Universitario
+                </div>
+                <div class="col s12 l4">
+                  <b>Estado:</b> EN CURSO
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha de inicio:</b> 01/01/2017
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha fin:</b> Cursando actualmente
+                </div>
+                <div class="col s12 l4">
+                  <b>Promedio:</b> 6
+                </div>
+                <div class="col s12 l4">
+                  <b>Cantidad de materias:</b> 24
+                </div>
+                <div class="col s12 l4">
+                  <b>Cantidad de materias aprobadas:</b> 21
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BOTON DESPLEGABLE CUATRO -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCuatro">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCuatro" aria-expanded="false" aria-controls="collapseCuatro">
+              <strong>Analista Programador Universitario - UNIVERSIDAD NACIONAL DE LA PLATA</strong>
+            </button>
+          </h2>
+          <div id="collapseCuatro" class="accordion-collapse collapse" aria-labelledby="headingCuatro" data-bs-parent="#accordionFormacion">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col s12 l4">
+                  <b>Área de estudio:</b> ANÁLISIS DE SISTEMAS
+                </div>
+                <div class="col s12 l4">
+                  <b>Nivel de estudio:</b> Universitario
+                </div>
+                <div class="col s12 l4">
+                  <b>Estado:</b> EN CURSO
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha de inicio:</b> 01/01/2015
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha fin:</b> Cursando actualmente
+                </div>
+                <div class="col s12 l4">
+                  <b>Promedio:</b> 6
+                </div>
+                <div class="col s12 l4">
+                  <b>Cantidad de materias:</b> 24
+                </div>
+                <div class="col s12 l4">
+                  <b>Cantidad de materias aprobadas:</b> 22
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experienciaLaboral">
+      <div class="experienciaLaboral">
+        <h2>Experiencia Laboral</h2>
+      </div>
+      <div class="accordion accordion" id="accordionExperienciaLaboral">
+        <!-- BOTON DESPLEGABLE CINCO -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingCinco">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCinco" aria-expanded="false" aria-controls="collapseCinco">
+              <strong>Asistente de Redes y Telecomunicaciones</strong>
+            </button>
+          </h2>
+          <div id="collapseCinco" class="accordion-collapse collapse" aria-labelledby="headingCinco" data-bs-parent="#accordionExperienciaLaboral">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col s12 l4">
+                  <b>Empresa:</b> BugTech
+                </div>
+                <div class="col s12 l4">
+                  <b>Radicación de la empresa y/u organismo:</b> ARGENTINA
+                </div>
+                <div class="col s12 l4">
+                  <b>Área:</b> Tecnología
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha de inicio:</b> 01/01/2019
+                </div>
+                <div class="col s12 l4">
+                  <b>Trabajando actualmente:</b> SI
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha de fin:</b>
+                </div>
+                <div class="col s12 l4">
+                  <b>Ramo/Actividad:</b> Informática
+                </div>
+                <div class="col s12 l4">
+                  <b>Nivel de conocimiento o Jerarquía:</b> Avanzado
+                </div>
+                <div class="col s12 l4">
+                  <b>Descripción de tareas principales:</b> Armado y repacion de PCs. Instalación y mantenimiento de Software y Hardware
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BOTON DESPLEGABLE SEIS -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSeis">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeis" aria-expanded="false" aria-controls="collapseSeis">
+              <strong>Asistente Mesa de Ayuda</strong>
+            </button>
+          </h2>
+          <div id="collapseSeis" class="accordion-collapse collapse" aria-labelledby="headingSeis" data-bs-parent="#accordionExperienciaLaboral">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col s12 l4">
+                  <b>Empresa:</b> Movistar
+                </div>
+                <div class="col s12 l4">
+                  <b>Radicación de la empresa y organismo:</b> ARGENTINA
+                </div>
+                <div class="col s12 l4">
+                  <b>Área:</b> Tecnología
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha de inicio:</b> 01/01/2016
+                </div>
+                <div class="col s12 l4">
+                  <b>Trabajando actualmente:</b> NO
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha de fin:</b> 01/01/2018
+                </div>
+                <div class="col s12 l4">
+                  <b>Ramo/Actividad:</b> Telefonía
+                </div>
+                <div class="col s12 l4">
+                  <b>Nivel de conocimiento o Jerarquía:</b> Básico
+                </div>
+                <div class="col s12 l4">
+                  <b>Descripción de tareas principales:</b> Soporte a usuarios de la empresa
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="idioma">
+      <div class="idioma">
+        <h2>Idioma</h2>
+      </div>
+      <div class="accordion accordion" id="accordionIdioma">
+        <!-- BOTON DESPLEGABLE SIETE -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingSiete">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSiete" aria-expanded="false" aria-controls="collapseSiete">
+              <strong>Inglés</strong>
+            </button>
+          </h2>
+          <div id="collapseSiete" class="accordion-collapse collapse" aria-labelledby="headingSiete" data-bs-parent="#accordionIdioma">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col s12 l4">
+                  <b>Nivel Oral:</b> Básico
+                </div>
+                <div class="col s12 l4">
+                  <b>Nivel Escrito:</b> Avanzado
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BOTON DESPLEGABLE OCHO -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOcho">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOcho" aria-expanded="false" aria-controls="collapseOcho">
+              <strong>Francés</strong>
+            </button>
+          </h2>
+          <div id="collapseOcho" class="accordion-collapse collapse" aria-labelledby="headingOcho" data-bs-parent="#accordionIdioma">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col s12 l4">
+                  <b>Nivel Oral:</b> Básico
+                </div>
+                <div class="col s12 l4">
+                  <b>Nivel Escrito:</b> Nulo
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cursos">
+      <div class="cursos">
+        <h2>Cursos</h2>
+      </div>
+      <div class="accordion accordion" id="accordionCursos">
+        <!-- BOTON DESPLEGABLE NUEVE -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNueve">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNueve" aria-expanded="false" aria-controls="collapseNueve">
+              <strong>Armado y Reparación de PCs</strong>
+            </button>
+          </h2>
+          <div id="collapseNueve" class="accordion-collapse collapse" aria-labelledby="headingNueve" data-bs-parent="#accordionCursos">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col s12 l4">
+                  <b>Área de estudio:</b> Informática
+                </div>
+                <div class="col s12 l4">
+                  <b>Cantidad de horas:</b> 20
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha del curso:</b> 01/10/2015
+                </div>
+                <div class="col s12 l4">
+                  <b>Puntaje:</b> 10
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- BOTON DESPLEGABLE DIEZ -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingDiez">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseDiez" aria-expanded="false" aria-controls="collapseDiez">
+              <strong>Argentina Programa #SeProgramar</strong>
+            </button>
+          </h2>
+          <div id="collapseDiez" class="accordion-collapse collapse" aria-labelledby="headingDiez" data-bs-parent="#accordionCursos">
+            <div class="accordion-body">
+              <div class="row">
+                <div class="col s12 l4">
+                  <b>Área de estudio:</b> Informática
+                </div>
+                <div class="col s12 l4">
+                  <b>Cantidad de horas:</b> 60
+                </div>
+                <div class="col s12 l4">
+                  <b>Fecha del curso:</b> 13/04/2022
+                </div>
+                <div class="col s12 l4">
+                  <b>Puntaje:</b> 10
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/funciones.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
